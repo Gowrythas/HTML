@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width-device-width,initial-scale=1.0">
+
+   <style>
+
+
+
+      input[type=submit]:hover
+      {
+        background-color:white;
+      }
+      .container{
+        border radius: 5px;
+        background-color: blue;
+      }
+      .col-25{
+        float:left;
+        width:25%;
+        margin-top:6px
+
+      }
+      .col-75{
+        float:left;
+        width:75%;
+        margin-top:6px;
+      }
+      .row:after{
+        content:"";
+        display:table;
+        clear:both;
+      }
+
+
+
+   </style>
+</head>
+<body>
+      <h1>Uki-Student</h1>
+      <div class="container">
+       <form action="/action_page.php">
+          <fieldset>
+            <legend text-align="center";>Uki.life</legend>
+               <div class="row">
+                 <div class="coll-25">
+                        <label for="fname">First Name  :</label>
+                  </div>
+                  <div class="coll-75">
+                        <input type="text" id="fname" name="firstname" placeholder="type here">
+                  </div>
+
+
+                  <div class="coll-25">
+                        <label for="lname">Last Name  :</label>
+                  </div>
+                   <div class="coll-75">
+                        <input type="text" id="lname" name="lastname" placeholder="type here">
+                    </div   >
+                     <div class="coll-25">
+                          <label for="regno">Reg.No   :</label>
+                       </div>
+                        <div class="coll-75">
+                          <input type="text" id="regno" name="regno" placeholder="type here">
+                        </div>
+                         <div class="coll-25">
+                          <label for="dob">Date of birth   :</label>
+                        </div>
+                         <div class="coll-75">
+                          <input type="text" id="dob" name="dateofbirth" placeholder="type here">ss
+                        </div>
+
+                    <label>Gender  :</label>
+                          <input type="radio" id="male" name="gender" value="Male">
+                          <label for="male">Male</label>
+                          <input type="radio" id="female" name="gender" value="Female" checked>
+                          <label for="male">Female</label><br>
+                    <label>Fav.Subject  :<label>
+                          <input type="checkbox" id="sub1" name="sub1" value="Programming">
+                              <label for="sub1">Programming</label>
+                          <input type="checkbox" id="sub2" name="sub2" value="Business">
+                              <label for="sub2">Business</label>
+                          <input type="checkbox" id="sub3" name="sub3" value="Personalcoaching">
+                              <label for="sub3">Personal coaching</label>
+                          <input type="checkbox" id="sub4" name="sub4" value="English">
+                              <label for="sub4">English</label><br>
+                          <div class="row"><br>
+
+                                  <label for="feedback">Feedback</label>
+                                  <textarea id="feedback" name="feedback" style="height:100px"></textarea>
+
+                           </div>
+                           <div class="row">
+                               <input type="submit" value="SUBMIT">
+                               <input type="reset" value="RESET">
+                           </div>
+
+            </div>
+        </fieldset>
+    </form>
+  </div>
+
+</body>
+</html>
